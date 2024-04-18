@@ -13,6 +13,7 @@ import { WagmiProvider } from 'wagmi'
 import { mainnet } from 'wagmi/chains'
 
 import { siteConfig } from '@/lib/siteConfig'
+import { ThemeProvider } from 'next-themes'
 
 const config = getDefaultConfig({
   appName: siteConfig.title,
@@ -42,7 +43,14 @@ export const RootProvider: FC<PropsWithChildren<{}>> = ({ children }) => {
             borderRadius: 'small',
           })}
         >
+            <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
           {children}
+          </ThemeProvider>
           <Toaster theme={'light'} />
         </RainbowKitProvider>
       </QueryClientProvider>

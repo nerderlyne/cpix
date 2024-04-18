@@ -23,7 +23,7 @@ export const ContractImage = ({
     }
 
     return <div>
-        <h1 className="fixed top-0 left-0 text-4xl text-white">Contract {address}</h1>
+        <h1 className="fixed top-0 left-0 text-4xl text-foreground">Contract {address}</h1>
         <HexImage hex={data} />
     </div> 
 }

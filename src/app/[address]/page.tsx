@@ -16,7 +16,8 @@ export default function Home({
     render = <ContractImage address={params.address} />
   }
  
-  return (
+  return (<>
         {render}
+        </>
   );
 }

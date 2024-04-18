@@ -17,8 +17,8 @@ export const AddressForm = () => {
 
   return (
     <form onSubmit={onSubmit}>
-      <input name="address" type="text" placeholder="Enter an address" />
-      <button type="submit">Submit</button>
+      <input name="address" type="text" placeholder="Enter an address" className='p-2 min-w-[26rem]' />
+      <button type="submit" className="hidden">Submit</button>
     </form>
   )
 }
