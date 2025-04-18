@@ -22,7 +22,7 @@ const config = getDefaultConfig({
     ...mainnet,
     rpcUrls: {
         default: {
-            http: ['https://rpc.ankr.com/eth/' + env.NEXT_PUBLIC_ANKR_API_KEY],
+            http: ['https://rpc.ankr.com/eth/'],
         }
     }
   }],
